@@ -1,0 +1,84 @@
+body {
+    background-color: #fff;
+}
+header {
+    position: fixed;
+    top: 0px;left: 30%;right: 30%;
+    background-color: #fff;
+    height: 80px;
+    z-index: 5;
+}
+header .wrap { margin: 3%; }
+header .box {
+    background-color: #f6f6f6;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.container {
+    position: absolute;
+    top: 80px;left: 30%;right: 30%;
+    margin-bottom: 100px;
+}
+
+#profile h1 {
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 28px;
+}
+#profile .picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 900px;
+    display: inline-block;
+}
+#profile p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#products h2 {
+    border-bottom: 2px solid #ddd;
+    line-height: 60px;
+}
+#products .item {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px 1px #ddd;
+}
+#products .item .image {
+    height: 130px;
+}
+#products .item h3 {
+    margin: 0px;
+    font-size: 23px;
+}
+#products .item p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+#products .item button {
+    background-color: #2c9cdb;
+    color: #fff;
+    padding: 0px 30px;
+    height: 40px;
+    margin-top: 0px;
+}
+
+@media (max-width: 480px) {
+    header { left: 0%;right: 0%; }
+    .container {
+        left: 5%;right: 5%;
+    }
+    header {
+        height: 50px;
+    }
+    header .wrap { margin: 1.5%; }
+    header .box { height: 40px; }
+    .container { top: 60px; }
+    #profile { text-align: center; }
+    #profile h1 { margin-top: 25px; }
+    #slideshow { margin-top: 40px; }
+    
+}

@@ -1,0 +1,47 @@
+body { background-color: #dbfafd; }
+.container {
+    position: absolute;
+    top: 0px;right: 0%;width: 45%;bottom: 0px;
+    box-shadow: 1px 1px 5px 1px #ddd;
+    background-color: #fff;
+}
+.container h2 {
+    font-size: 28px;
+}
+.container > .wrap { margin: 10%; }
+
+.message {
+    position: fixed;
+    top: 80px;left: 5%;
+    color: #012a56;
+    font-family: ProBold;
+}
+.message h2 {
+    font-size: 30px;
+}
+
+.illustration {
+    position: fixed;
+    bottom: -10px;left: 5%;
+    width: 40%;
+    height: 450px;
+    background-size: 100% 100% !important;
+    vertical-align: bottom;
+}
+.illustration img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 480px) {
+    .container {
+        left: 0%;right: 0%;top: 40px;
+        width: 100%;
+        box-shadow: none;
+    }
+    .container > .wrap { margin: 5%; }
+    .container h2 { text-align: center; }
+    .illustration,.message {
+        display: none;
+    }
+}
